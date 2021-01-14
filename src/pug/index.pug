@@ -1,0 +1,427 @@
+doctype html
+html(lang='es')
+
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Representación Estudiantil 2021 - UTEC
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Global site tag (gtag.js) - Google Analytics
+        script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-6RMHVSCFHC')
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6RMHVSCFHC');
+
+        meta(name='title' content='Representación Estudiantil - UTEC')
+        meta(name='description' content='Somos un grupo multidisciplinario de estudiantes que busca hacer de la universidad un mejor lugar ❤️')
+        
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+        script(src='https://documentcloud.adobe.com/view-sdk/main.js')
+
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top')
+                    //- img(src='assets/img/logo1.png', alt='')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.fas.fa-bars.ml-1
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.text-uppercase.ml-auto
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about') ¿Tengo un problema?
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Equipo
+                        //- li.nav-item
+                        //-     a.nav-link.js-scroll-trigger(href='#propuestas') Propuestas
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(onclick='openWidget()') Contáctanos
+        // Masthead
+        header.masthead
+            .container
+                .masthead-subheading "Por una UTEC mejor"
+                .masthead-heading.text-uppercase RE 2021
+                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(onclick='openWidget()') Contáctanos
+
+        
+        //- // Team
+        //- section#nosotros.page-section
+        //-     .container
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase ¿Quiénes somos?
+        //-         .row
+        //-             .col-lg-8.mx-auto.text-center
+        //-                 p.large.text-muted Somos un grupo multidisciplinario de estudiantes, líderes en organizaciones y proyectos, lo cual nos permite aportar ideas desde distintas perspectivas. Gracias a esta diversidad, logramos complementarnos, y así, resolver problemas y aportar soluciones. A pesar de ser diferentes, tenemos una meta en común: hacer de la universidad un mejor lugar.
+
+        // About
+        section#about.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase ¿Tienes un problema?
+                    h3.section-subheading.text-muted Nosotros estamos para ayudarte. Juntos con el equipo de voceros nos encargaremos de hacer todo lo posible para tener una vida universitaria feliz.
+                ul.timeline
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 Paso 1: Conversa con el Profesor del Curso
+                            .timeline-body
+                                p.text-muted
+                                    | La gran parte de los inconvenientes en un curso se resuelven en esta etapa. No tengas miedo en conversar con ellos, manteniendo siempre el respeto.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 Paso 2: Acude a un Vocero
+                            .timeline-body
+                                p.text-muted
+                                    | Los voceros es uno de los canales más importantes para transmitir inquietudes o reclamos. Acuede a tus compañeros, ellos siempre estarán dispuestos a ayudarte.
+                            a.btn.btn-primary.btn-l.mt-2.text-uppercase.portfolio-link(data-toggle='modal', href='#quienEsMiVocero')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        | ¿Quién es mi Vocero?
+
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 Paso 3: Comunícate con Representación Estudiantil
+                            .timeline-body
+                                p.text-muted
+                                    | Comunicate con el equipo de Representación Estudiantil. Para ello, deberás de completar el formulario de contacto, el cuál lo revisará el vocero (primera instancia) y posteriormente nosotros. 
+                                a.btn.btn-primary.btn-l.mt-2.text-uppercase.js-scroll-trigger(onclick='openWidget()') Formulario Aquí
+
+
+
+        // Portfolio Grid
+        section#portfolio.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Nuestro Equipo
+                    h3.section-subheading.text-muted Representantes estudiantiles 2021. Hacer click en cada uno para conocer más de nosotros. :)
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Valeria Márquez
+                                .portfolio-caption-subheading.text-muted Titular - Bioingenieria
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/02-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Gabriel Bancayán
+                                .portfolio-caption-subheading.text-muted Titular - Energía
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/03-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Christian Ledgard
+                                .portfolio-caption-subheading.text-muted Computer Science
+                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/04-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Diego Palma
+                                .portfolio-caption-subheading.text-muted Ingeniería Mecatrónica
+                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/05-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Marian Poblete
+                                .portfolio-caption-subheading.text-muted Ingenieria Ambiental
+                    .col-lg-4.col-sm-6
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/06-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Ignacio Boado
+                                .portfolio-caption-subheading.text-muted Ingeniería Industrial
+
+
+                    //- li.timeline-inverted
+                    //-     .timeline-image
+                    //-         img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='')
+                    //-     .timeline-panel
+                    //-         .timeline-heading
+                    //-             h4 July 2014
+                    //-             h4.subheading Phase Two Expansion
+                    //-         .timeline-body
+                    //-             p.text-muted
+                    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                    //- li.timeline-inverted
+                    //-     .timeline-image
+                    //-         h4
+                    //-             | ¡IG!
+                    //-             br
+                    //-             a(href="https://www.instagram.com/representacionutec/" target="_blank")
+                    //-                 i.fab.fa-instagram.fa-2x.mt-1.text-white
+
+
+
+        //- // Services
+        //- section#services.page-section.bg-light
+        //-     .container
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase Nuestras propuestas en vivo
+        //-             h3.section-subheading.text-muted A continuación podrán observar el status de nuestras propuestas. Si tienen alguna sugerencia, no duden en contactarnos!
+        //-         .row.text-center
+        //-             iframe.airtable-embed(src='https://airtable.com/embed/shrQXEmx7JnbwT3SH?backgroundColor=red' frameborder='0' onmousewheel='' width='100%' height='533' style='background: transparent; border: 1px solid #ccc;')
+
+        // Footer
+        footer.footer.py-4
+            .container
+                .row.align-items-center
+                    .col-lg-4.text-lg-left
+                        | Copyright © RE - 2020
+                    .col-lg-4.my-3.my-lg-0
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.instagram.com/representacionutec/')
+                            i.fab.fa-instagram
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.facebook.com/R.EstudiantilUTEC')
+                            i.fab.fa-facebook-f
+                    .col-lg-4.text-lg-right
+                        | UTEC - Lima, Perú
+                        
+        // Portfolio Modals
+        // Modal 1 - Valeria Márquez
+        #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Valeria Márquez
+                                    p 🔬 🧬
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/01-full.jpg', alt='')
+                                    p ¡Holaa! Me llamo Valeria Márquez,  estoy en 8vo ciclo y pertenezco al décimo superior de Bioingeniería. Me considero una persona responsable, observadora, proactiva y muy decidida. A lo largo de mi carrera, he podido pertenecer a la directiva de BioUTEC, crear el capítulo de EMBS, ser coordinadora de Journal Club UTEC. Me encanta practicar deportes o jugar videojuegos, de hecho formo parte del equipo de futsal y de judo de la universidad. Académicamente, he logrado desarrollar diversos proyectos e, incluso, hacer una pasantía en un laboratorio en Alemania como parte del programa REPU. Siempre me he caracterizado por participar activamente en iniciativas que ayuden a mejorar el ambiente universitario en UTEC, y esta no será la excepción.
+
+                                    ul.list-inline
+                                        li Carrera: Bioingeniería
+                                        li Código: 2017-1
+                                    div.mb-4
+                                        a(href='https://www.linkedin.com/in/valeriamarquez9/', target='_blank')
+                                            i.fab.fa-linkedin.fa-2x
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+        // Modal 2 - Gabriel Bancayán
+        #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Gabriel Bancayán
+                                    p ⚡️ ⚡️ ⚡️
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/02-full.jpg', alt='')
+                                    p Hola!! Soy Gabriel Bancayán, estoy en 8vo ciclo y pertenezco al tercio superior de Ing. de la Energía. Soy un joven solidario, responsable y ordenado. Me gusta apoyar en distintos proyectos con una motivación trascendente. Decidí involucrarme más en UTEC pues quiero contribuir a la mejora de nuestra comunidad. Junto a unos amigos organizo un voluntariado para chicos donde enseñamos ciencia a través de talleres dinámicos, promuevo la innovación tecnológica como vicepresidente de IEEE y busco la integración de estudiantes como vocero de mi carrera. Me apasiona ver y jugar fútbol, hacer calistenia y leer sobre desarrollo personal.
+                                    ul.list-inline
+                                        li Carrera: Ingeniería de la Energía
+                                        li Código: 2017-1
+                                    div.mb-4
+                                        a(href='https://www.linkedin.com/in/gabrielbancayan/', target='_blank')
+                                            i.fab.fa-linkedin.fa-2x
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+        // Modal 3 - Christian Ledgard
+        #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Christian Ledgard
+                                    p 👨‍💻 👨‍💻 👨‍💻
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/03-full.jpg', alt='')
+                                    p Hola! Mi nombre es Christian, me encuentro en 6to ciclo y pertenezco al quinto superior de Computer Science. Soy una persona apasionada por la tecnología y el bien que genera en la sociedad. Actualmente me encuentro trabajando como asistente de investigación en COMPSUST (Centro de investigación en computación sostenible de UTEC). Asimismo, he sido mentor peer y académico, además de pertenecer al grupo de “delegados” CS en donde nos reunimos con nuestro director de carrera para analizar posibles mejoras y llevar las dudas y consultas de los alumnos. 
+                                    p También, he pertenecido al equipo de teachers assistants en los cursos de ICC y POOI en los últimos 3 ciclos (2019-1 - 2020-1). Aparte de haber participado en varios proyectos de la carrera ✌️. Fuera de la universidad, he representado al Perú en más de 5 países practicando vela, modalidad Optimist, Sunfish y recientemente Laser.
+                                    p Al igual que mis compañeros, tenemos un mismo rumbo y objetivo: ejecutar una representación eficiente que represente de manera activa a cada uno de ustedes.
+
+                                    ul.list-inline
+                                        li Carrera: Ciencia de la Computación
+                                        li Código: 2018-1
+                                    div.mb-4
+                                        a(href='https://www.linkedin.com/in/cledgard/', target='_blank')
+                                            i.fab.fa-linkedin.fa-2x
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+        // Modal 4 - Diego Palma
+        #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Diego Palma
+                                    p 🤖 🦾
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/04-full.jpg', alt='')
+                                    p ¡Hola! Mi nombre es Diego Palma Rodríguez, estoy en 6to ciclo y pertenezco al décimo superior de la carrera de Ingeniería Mecatrónica. Me considero una persona responsable y muy comprometida con cada una de las actividades que realizo. Actualmente, soy miembro de GIIT Robotics (como parte del equipo de desarrollo de proyectos y líder de uno de ellos) y Community Builder de la Comunidad de Ingresantes UTEC. Por otro lado, me gusta mucho jugar fútbol (#Antes del Covid), disfruto de películas relacionadas con acertijos y suspenso, y trato de aprender algo nuevo cada día ✌ ️.
+                                    ul.list-inline
+                                        li Carrera: Ingeniería Mecatrónica
+                                        li Código: 2018-1
+                                    div.mb-4
+                                        a(href='https://www.linkedin.com/in/diego-p-8a884b118/', target='_blank')
+                                            i.fab.fa-linkedin.fa-2x
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+        // Modal 5 - Marian Poblete
+        #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Marian Poblete
+                                    p 🌱
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/05-full.jpg', alt='')
+                                    p Holaa!!, Mi nombre es Marian Poblete, estoy en mi 4to ciclo y pertenezco al décimo superior de Ingeniería Ambiental. Me considero una  persona decidida y motivada a generar cambios a mi alrededor por el bien de todos. Me gusta participar en proyectos de todo tipo, conseguir experiencia y mejorar como persona y profesional cada día. Decidí estudiar en UTEC porque me encantó la metodología que aquí se maneja y las oportunidades a las que se tiene acceso. Actualmente también soy peer mentoring desde el ciclo 2020-1. 
+                                    p Mis pasiones son viajar, practicar motocross y la música en todas sus expresiones, lo que me motivó a llevar la presidencia de FÚSICA, el club de música de nuestra universidad.
+                                    ul.list-inline
+                                        li Carrera: Ingeniería Ambiental
+                                        li Código: 2019-1 
+                                    div.mb-4
+                                        a(href='https://www.linkedin.com/in/marian-poblete-1791151a8/', target='_blank')
+                                            i.fab.fa-linkedin.fa-2x
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+        // Modal 6 - Ignacio Boado
+        #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Ignacio Boado
+                                    p 🏭
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/06-full.jpg', alt='')
+                                    p Holaaa, mi nombre es Ignacio Boado, pero todos me conocen como Nacho/Nachito, estoy en mi 4to ciclo y pertenezco al décimo superior de Industrial. Me considero una persona consciente de la importancia del cargo al que estoy postulando y súper comprometida. Actualmente soy parte del grupo de delegados voluntarios. Con relación a mi vida personal, mi deporte favorito es el tenis y me gusta escuchar música en mis tiempos libres. Me presento en esta lista, porque creo que todos sus miembros al igual que yo, estamos  buscando el mismo ideal, el cual es mejorar la experiencia universitaria y la calidad educativa.
+                                    ul.list-inline
+                                        li Carrera: Ingeniería Industrial
+                                        li Código: 2019-1
+                                    div.mb-4
+                                        a(href='http://linkedin.com/in/ignacio-boado-89b1401b6', target='_blank')
+                                            i.fab.fa-linkedin.fa-2x
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+
+        // Quien Es Mi Vocero
+        #quienEsMiVocero.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase.mb-4 Voceros 2021
+                                    iframe(width='100%' height='350' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSVCyhgTgaQllgRWnkvaewALewRgjmoFyPh3bIlmMxO9tTN2rTkA6Qj_OHvq6VvQy2YWwLsA2bXoRm3/pubhtml?gid=224517116&single=true&widget=true&headers=false')
+                                    button.btn.btn-primary.mt-3(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+
+
+        
+        script.
+            function openWidget() {
+            FreshworksWidget('open');
+            }
+
+        script.
+            window.fwSettings={
+            'widget_id':66000002052
+            };
+            !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()
+        script(type='text/javascript' src='https://widget.freshworks.com/widgets/66000002052.js' async='' defer='')
+
+
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+
+        // Contact form JS
+        script(src='assets/mail/jqBootstrapValidation.js')
+        script(src='assets/mail/contact_me.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+        
