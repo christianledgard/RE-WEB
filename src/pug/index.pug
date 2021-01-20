@@ -6,18 +6,19 @@ html(lang='es')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
         meta(name='author', content='')
+        // Google Tag Manager
+        script.
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KL9GR3J');
+        // End Google Tag Manager
+
 
         title Representación Estudiantil 2021 - UTEC
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
-
-        // Global site tag (gtag.js) - Google Analytics
-        script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-6RMHVSCFHC')
-        script.
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-6RMHVSCFHC');
 
         meta(name='title' content='Representación Estudiantil - UTEC')
         meta(name='description' content='Somos un grupo multidisciplinario de estudiantes que busca hacer de la universidad un mejor lugar ❤️')
@@ -37,6 +38,11 @@ html(lang='es')
 
 
     body#page-top
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-KL9GR3J' height='0' width='0' style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
 
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
@@ -78,7 +84,7 @@ html(lang='es')
             .container
                 .text-center
                     h2.section-heading.text-uppercase ¿Tienes un problema?
-                    h3.section-subheading.text-muted Nosotros estamos para ayudarte. Juntos con el equipo de voceros nos encargaremos de hacer todo lo posible para tener una vida universitaria feliz.
+                    h3.section-subheading.text-muted Nosotros estamos para ayudarte. Junto al equipo de voceros nos encargaremos de hacer todo lo posible para tener una vida universitaria feliz.
                 ul.timeline
                     li
                         .timeline-image
@@ -97,7 +103,7 @@ html(lang='es')
                                 h4 Paso 2: Acude a un Vocero
                             .timeline-body
                                 p.text-muted
-                                    | Los voceros es uno de los canales más importantes para transmitir inquietudes o reclamos. Acuede a tus compañeros, ellos siempre estarán dispuestos a ayudarte.
+                                    | El vocero es uno de los canales más importantes para transmitir inquietudes o reclamos. Acude a tus compañeros, ellos siempre estarán dispuestos a ayudarte.
                             a.btn.btn-primary.btn-l.mt-2.text-uppercase.portfolio-link(data-toggle='modal', href='#quienEsMiVocero')
                                 .portfolio-hover
                                     .portfolio-hover-content
@@ -391,7 +397,8 @@ html(lang='es')
                                 .modal-body
                                     // Project Details Go Here
                                     h2.text-uppercase.mb-4 Voceros 2021
-                                    iframe(width='100%' height='350' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSVCyhgTgaQllgRWnkvaewALewRgjmoFyPh3bIlmMxO9tTN2rTkA6Qj_OHvq6VvQy2YWwLsA2bXoRm3/pubhtml?gid=224517116&single=true&widget=true&headers=false')
+                                    //- iframe(width='100%' height='350' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSVCyhgTgaQllgRWnkvaewALewRgjmoFyPh3bIlmMxO9tTN2rTkA6Qj_OHvq6VvQy2YWwLsA2bXoRm3/pubhtml?gid=224517116&single=true&widget=true&headers=false')
+                                    iframe(class="airtable-embed" src="https://airtable.com/embed/shrnxqGhBpZjYBaLj?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;")
                                     button.btn.btn-primary.mt-3(data-dismiss='modal', type='button')
                                         i.fas.fa-times.mr-1
                                         | Cerrar
